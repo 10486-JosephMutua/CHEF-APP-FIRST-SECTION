@@ -15,7 +15,7 @@ return (
  event.preventDefault()
  const formData = new FormData(event.currentTarget)
  const newIgredient = formData.get("ingredient")
-
+formData.reset()
  setfavourite(prevLunch => [...prevLunch, newIgredient])
  }
 
